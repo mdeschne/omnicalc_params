@@ -33,9 +33,7 @@ pal =  @principal
 
 pmt = (pal*rate)/(1-(1+rate)**(-months))
 
-
-  @pmt = pmt
-
+  @pmt = pmt.round(2)
 
   render("calculations/flex_pmt.html.erb")
 end
@@ -53,6 +51,16 @@ end
 
 
 def square_form
-  render("claculations/square_form.html.erb")
+  render("calculations/square_form.html.erb")
 end
+
+def square
+
+  @input = params["x"].to_f
+
+  @square = @input ** 2
+
+    render("calculations/square.html.erb")
+end
+
 end

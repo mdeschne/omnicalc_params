@@ -18,15 +18,7 @@ def flex_root
   render("calculations/flex_root.html.erb")
 end
 
-def flex_pmt
-# 
-# @years  @pal @apr @pmt.
-#
-# @input = params["x"].to_f
-#
-# @pmt = @input ** 0.5
-
-  render("calculations/flex_pmt.html.erb")
+def square_form
+  render("claculations/square_form.html.erb")
 end
-
 end
